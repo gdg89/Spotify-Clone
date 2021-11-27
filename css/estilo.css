@@ -5,8 +5,9 @@
 /* Layout
 ------------------*/
 html, body, #home {
-	
 	height: 100%;
+	overflow-x:hidden;
+	
 }
 
 body{
@@ -48,8 +49,8 @@ nav.navbar-transparente{
 .btn-custom{
 	color:white;
 	border-radius:500px;
-	-webkit-border-radius:500px;
-	-moz-border-radius:500px; 
+	-webkit-border-radius:500px;/* Chrome, Safari, Opera */
+	-ms-border-radius:500px; /* IE 9*/
 	text-transform: uppercase;
 	transition: background 0.4s, color0.4s;
 	padding:10px 20px;
@@ -72,6 +73,38 @@ nav.navbar-transparente{
 	color: black;
 
 }
+/*****Estrutura de Conteudos ****/
+
+#servicios{
+	background:white;
+	padding-top:20px;
+	padding-bottom:20px;
+	 
+}
+#servicios h2, h3{
+	color:#7c25f8;
+}
+#recursos{
+	padding-top:20px;
+	padding-bottom:20px;
+	color: white;
+}
+#recursos h2{
+	color:white;
+}
+#recursos h3{
+	color:#9bf0e1;
+}
+
+.albums{
+	padding:10px 0px;
+}
+.rotacionar{
+	-webkit-transform:rotate(30deg);/* Chrome, Safari, Opera */
+	-ms-transform:rotate(30deg);/* IE 9*/
+	transform:rotate(30deg);
+	padding-left: 80px;
+}
 /****** Tipografia ******/
 h1{
 	font-weight: 900;
@@ -79,6 +112,18 @@ h1{
 	margin-bottom: 50px;
 	color:white;
 
+}
+h2{
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: -0,04em;
+
+}
+h3{
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0,04em;
+	
 }
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
